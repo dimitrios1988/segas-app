@@ -1,0 +1,7 @@
+{
+  "name": "segas-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

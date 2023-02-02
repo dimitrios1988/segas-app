@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'segas-app',
+  appId: 'gr.segas.app',
+  appName: 'SEGAS',
   webDir: 'www',
   bundledWebRuntime: false
 };

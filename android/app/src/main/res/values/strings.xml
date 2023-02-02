@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SEGAS</string>
+    <string name="title_activity_main">SEGAS</string>
+    <string name="package_name">gr.segas.app</string>
+    <string name="custom_url_scheme">gr.segas.app</string>
+</resources>

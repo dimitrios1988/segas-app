@@ -1,5 +1,11 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  ViewChild,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'i-frame-view',
@@ -11,11 +17,15 @@ export class IFrameViewComponent implements AfterViewInit {
 
   private sgUrl = '';
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private platform: Platform) {
     this.sgUrl = (this.route.snapshot.paramMap.get('id') as string) ?? '';
   }
 
   ngAfterViewInit() {
     this.segasIframe.nativeElement.src = `https://www.segas.gr/${this.sgUrl}`;
+    this.platform.backButton.subscribeWithPriority(10, (processNextHandler) => {
+      window.history.back();
+      processNextHandler();
+    });
   }
 }

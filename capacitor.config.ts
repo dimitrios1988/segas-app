@@ -4,7 +4,7 @@ const config: CapacitorConfig = {
   appId: 'gr.segas.app',
   appName: 'SEGAS',
   webDir: 'www',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
 };
 
 export default config;

@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'gr.segas.app',
+  appId: 'gr.segas.segas',
   appName: 'SEGAS',
   webDir: 'www',
   bundledWebRuntime: false,

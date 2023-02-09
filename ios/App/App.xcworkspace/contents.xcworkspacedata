@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/segas/segas-app/ios/App/App.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:App.xcodeproj">
+      location = "group:SEGAS.xcodeproj">
    </FileRef>
 </Workspace>
